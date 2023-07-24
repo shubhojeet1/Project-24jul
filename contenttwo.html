@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Project - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-r05u5M2ABD2rUj8aX/IRtNh21eUfr6P0u0r3eKc2R3gkUMhJ9FY7enmk2BDRQ4yfW6c6az20xgKPCp7d0VtJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header class="gradient-header">
+        <h1 style="font-family: cursive;">Canada</h1>
+        <p>Art Gallery of Ontario</p>
+        
+    </header>
+    <nav>
+        <div class="hamburger-menu">
+         
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="horizontal-menu">
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Get Brochure</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Join Email List</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside>
+            <div class="sidebar">
+                <h3 style="color: grey; margin-left: 35px;">Don't miss these sites:</h3>
+                <ul >
+                    <li>
+                       
+                        <a href="#">Audio Tour</a>
+                    </li>
+                    <li>
+                      
+                        <a href="#" >Display map</a>
+                    </li>
+                   
+                  
+                
+                </ul>
+            </div>
+            <div class="sidebar">
+                <h3 style="color: grey; margin-left: 35px;">Don't miss these sites:</h3>
+                <ul >
+                    <li>
+                       
+                        <a href="#">The Colosseum</a>
+                    </li>
+                    <li>
+                      
+                        <a href="#" >The Forum</a>
+                    </li>
+                    <li>
+                       
+                        <a href="#">The Pantheon</a>
+                    </li>
+                    <li>
+                       
+                        <a href="#" >Vatican Museum</a>
+                    </li>
+                    <li>
+                      
+                        <a href="#">Sistine Chapel</a>
+                    </li>
+                    
+                 
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <section>
+                <h2>The BAPS Shri Swaminarayan Temple</h2>
+                <h4>Exterior view</h4>
+                <div class="image-container" >
+                    <img  src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/10/BAPS-ShriSwami-Narayan-Mandir.jpg" alt="Floated Image">
+                    <p style="text-decoration: underline;font-weight: 600;">A street-side view of the Colosseum</p>
+                    <p>This magnificent temple is situated in Claireville Dr, Toronto – far north in an industrial locale. This hand-sculpted mandir is huge and is made of white marbles. The ambiance here is ethereal, serene and peaceful. The temple showcases beautiful craftsmanship, sculptures of Hindu deities and various Vedic traditions. While it is in Canada, it gives an ethereal vibe that makes visitors feel as if they are in India itself. What’s more, even prasaad is offered every day.</p>
+                </div>
+                <div class="text-container" >
+                  
+                    <p>The BAPS Shri Swaminarayan Mandir in Etobicoke, Toronto, Ontario, Canada is a traditional Hindu place of worship that was built by the BAPS Swaminarayan Sanstha. The BAPS Swaminarayan Sanstha, which is headed by Mahant Swami Maharaj, is a global spiritual organization within the Swaminarayan branch of Hinduism. The mandir was built in 18 months and consists of 24,000 pieces of hand-carved Italian carrara marble, Turkish limestone and Indian pink stone.[1] The mandir is the largest of its kind in Canada and was constructed according to guidelines outlined in ancient Hindu scriptures.[2] The grounds spread over 18 acres and in addition to the mandir, include a haveli and the Heritage Museum.[3] The mandir is open daily to visitors and for worship. In July 2017, the temple celebrated its 10-year anniversary.Once the divine has been invoked in a murti, it becomes an embodiment of the Divine.[6] Accordingly, Swaminarayan swamis (Hindu monks) offer devotional worship to the deities throughout the day. Before dawn, they awaken the deities by singing morning hymns (prabhatiya). The deities are then bathed and offered food and garments depending on the time of the day and season.[7] Food that has been offered to the deities is considered sanctified. These holy offerings are distributed to the devotees as prasadam.[7] Throughout the day, aarti, a ritual where devotees sing the glory of Swaminarayan while a lighted wick is circulated before the murtis, is performed five times a day and named mangala aarti, shanagar aarti, rajabhoga aarti, sandhya aarti and shayana aarti, respectively. During midday, lunch is offered. In the evening, dinner is offered. Finally, the swamis put the murtis to rest by adorning them with night garments.The mandir's cultural center is referred to as the haveli because of its traditional Indian architectural style.[8] The haveli is defined by an intricately carved wooden façade. Inside the haveli is a courtyard surrounded by teak and rosewood columns.
+                   </p>
+                  
+                </div>
+                
+               
+          
+            </section>
+        </main>
+
+       
+    </div>
+
+    <footer  class="gradient-footer">
+        <p>&copy; Copyright 2022 Anne Boehm.</p>
+        <!-- <p>Character entity in footer: &copy;&trade;</p> -->
+    </footer>
+</body>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const horizontalMenu = document.querySelector(".horizontal-menu");
+    const container = document.querySelector(".container");
+
+    // Add event listener for clicking on the hamburger menu
+    hamburgerMenu.addEventListener("click", function() {
+        horizontalMenu.classList.toggle("open");
+        container.classList.toggle("open");
+    });
+
+    // Add event listener to close the hamburger menu when clicking outside it
+    document.addEventListener("click", function(event) {
+        if (!hamburgerMenu.contains(event.target) && !horizontalMenu.contains(event.target)) {
+            horizontalMenu.classList.remove("open");
+            container.classList.remove("open");
+        }
+    });
+});
+</script>
+
+</html>

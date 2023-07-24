@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contentone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-r05u5M2ABD2rUj8aX/IRtNh21eUfr6P0u0r3eKc2R3gkUMhJ9FY7enmk2BDRQ4yfW6c6az20xgKPCp7d0VtJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header class="gradient-header">
+        <h1 style="font-family: cursive;">Canada</h1>
+        <p>Art Gallery of Ontario</p>
+        
+    </header>
+    <nav>
+        <div class="hamburger-menu">
+         
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="horizontal-menu">
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Get Brochure</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Join Email List</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside>
+            <div class="sidebar">
+                <h3 style="color: grey; margin-left: 35px;">Don't miss these sites:</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <img src="https://www.solosophie.com/wp-content/uploads/2023/01/rome-itinerary_1671774736.jpeg" alt="">
+                        <a href="#">The Colosseum</a>
+                    </li>
+                    <li>
+                        <img src="https://www.solosophie.com/wp-content/uploads/2023/01/rome-itinerary_1671774736.jpeg" alt="">
+                        <a href="#" >The Forum</a>
+                    </li>
+                    <li>
+                        <img src="https://www.solosophie.com/wp-content/uploads/2023/01/rome-itinerary_1671774736.jpeg" alt="">
+                        <a href="#">The Pantheon</a>
+                    </li>
+                    <li>
+                        <img src="https://www.solosophie.com/wp-content/uploads/2023/01/rome-itinerary_1671774736.jpeg" alt="">
+                        <a href="#" >Vatican Museum</a>
+                    </li>
+                    <li>
+                        <img src="https://www.solosophie.com/wp-content/uploads/2023/01/rome-itinerary_1671774736.jpeg" alt="">
+                        <a href="#">Sistine Chapel</a>
+                    </li>
+                    <li>
+                        <img src="https://www.solosophie.com/wp-content/uploads/2023/01/rome-itinerary_1671774736.jpeg" alt="">
+                        <a href="#" >St. Peter's Basilica</a>
+                    </li>
+                    <!-- Add more list items with images and links as needed -->
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <section>
+                <h2>Ontario: Canada's second largest province</h2>
+                <div class="image-container" >
+                    <img  src="https://www.ontario.ca/files/2023-02/co-ontario-government-legislative-building-543x305-2023-02-27.jpg" alt="Floated Image">
+                    <p style="text-decoration: underline;font-weight: 600;">A street-side view of the Colosseum</p>
+                    <p>The thinly populated Canadian Shield, which dominates the northwestern and central portions of the province, comprises over half the land area of Ontario. Although this area mostly does not support agriculture, it is rich in minerals, partly covered by the Central and Midwestern Canadian Shield forests, and studded with lakes and rivers.</p>
+                </div>
+                <div class="text-container" >
+                  
+                    <p>Ontario is bordered by the province of Manitoba to the west, Hudson Bay and James Bay to the north, and Quebec to the east and northeast, and to the south by the U.S. states of (from west to east) Minnesota, Michigan, Ohio, Pennsylvania, and New York. Almost all of Ontario's 2,700 km (1,678 mi) border with the United States follows inland waterways: from the westerly Lake of the Woods, eastward along the major rivers and lakes of the Great Lakes/Saint Lawrence River drainage system. There is only about 1 km (0.6 mi) of actual land border, made up of portages including Height of Land Portage on the Minnesota border.Ontario is bordered by the province of Manitoba to the west, Hudson Bay and James Bay to the north, and Quebec to the east and northeast, and to the south by the U.S. states of (from west to east) Minnesota, Michigan, Ohio, Pennsylvania, and New York. Almost all of Ontario's 2,700 km (1,678 mi) border with the United States follows inland waterways: from the westerly Lake of the Woods, eastward along the major rivers and lakes of the Great Lakes/Saint Lawrence River drainage system. There is only about 1 km (0.6 mi) of actual land border, made up of portages including Height of Land Portage on the Minnesota border.The great majority of Ontario's population and arable land is in Southern Ontario, and while agriculture remains a significant industry, the region's economy depends highly on manufacturing. In contrast, Northern Ontario is sparsely populated with cold winters and heavy forestation,[15] with mining and forestry making up the region's major industries.
+                   </p>
+                  
+                </div>
+                
+               
+          
+            </section>
+        </main>
+
+       
+    </div>
+
+    <footer class="gradient-footer">
+        <p>&copy; Copyright 2022 Anne Boehm.</p>
+        <!-- <p>Character entity in footer: &copy;&trade;</p> -->
+    </footer>
+</body>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const horizontalMenu = document.querySelector(".horizontal-menu");
+    const container = document.querySelector(".container");
+
+    // Add event listener for clicking on the hamburger menu
+    hamburgerMenu.addEventListener("click", function() {
+        horizontalMenu.classList.toggle("open");
+        container.classList.toggle("open");
+    });
+
+    // Add event listener to close the hamburger menu when clicking outside it
+    document.addEventListener("click", function(event) {
+        if (!hamburgerMenu.contains(event.target) && !horizontalMenu.contains(event.target)) {
+            horizontalMenu.classList.remove("open");
+            container.classList.remove("open");
+        }
+    });
+});
+</script>
+
+</html>
